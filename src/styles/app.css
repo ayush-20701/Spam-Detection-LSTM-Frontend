@@ -8,6 +8,10 @@
 html, body{
     overflow: hidden;
 }
+.alert{
+    position: absolute;
+    z-index: 200;
+}
 .main{
     height: 100vh;
     display: flex;

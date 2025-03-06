@@ -59,13 +59,14 @@ function App() {
     button.classList.add("pressed");
     setTimeout(() => button.classList.remove("pressed"), 150);
   };
-  
-  useEffect(() => {
-    window.alert("This is just a UI demo. The backend Flask API is not deployed yet. So, results will not be shown.");
-  }, []);
 
   return (
     <div className="main">
+
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        The backend Flask API is not deployed yet. The ML model returns result only on localhost currently. So, result would not be displayed. Sorry for the inconvenience!
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
       <DotLottieReact className="bg-animation" src="https://lottie.host/4bb0b478-0598-4143-b847-9cbb1eb03e89/w3gRuWcuNk.lottie" loop autoplay />
       {/* <DotLottieReact src="https://lottie.host/01508e0a-3ef4-4230-8e2c-740a3b8cb52d/ytGPDNMc0L.lottie" loop autoplay /> */}
       <div className="navbar">
