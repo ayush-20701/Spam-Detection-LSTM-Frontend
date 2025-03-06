@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./styles/app.css"
+import "./styles/responsive.css"
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import ham from "./assets/hamburger.svg"
 import 'animate.css'
