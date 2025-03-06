@@ -18,7 +18,7 @@ function App() {
       setloading(true)
       setShowResult(false)
       // Call your Flask API
-      const response = await fetch("https://spam-detection-lstm-backend-zmu5.vercel.app/predict", {
+      const response = await fetch("https://spam-detection-lstm-backend.onrender.com/predict", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
